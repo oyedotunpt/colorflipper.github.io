@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colorflipper</title>
+</head>
+<style type="text/css">
+	main{
+		min-height:400px;
+		display:grid;
+		align-items:center;
+	}
+	.container{
+		text-align:center;
+	}
+	.container h2{
+		background:#222;
+		color:#fff;
+		padding:1rem;
+		border-radius:0.25rem;
+		margin-bottom:2.5rem;
+	}
+	.color{
+		color:hsl(20%, 75%, 60%);
+	}
+	.btn-hero{
+		font-family:sans-serif;
+		text-transform:uppercase;
+		background:transparent;
+		color:#222;
+		display:inline-block;
+		transition:all 0.3s linear;
+		border-radius:2px solid #222;
+	}
+	.btn-hero:hover{
+		color:#fff;
+		background:#222;
+	}
+</style>
+<body>
+	<main>
+		<div class="container">
+			<h2> background color<span class="color">#F1F5F8</span></h2>
+				<button class="btn btn-hero" id="btn">click me</button>
+		</div>
+	</main>
+</body>
+<script type="text/javascript">
+	const colors=["#00080","#e2e2e2","FFF5EE","#32CD32","00FF00", "#00FA9A"]
+	const btn=document.getElementById('btn');
+	const color=document.querySelector(".color");
+	btn.addEventListener("click", ()=>{const randomNumber=getRandomNumber();
+		console.log(random)
+	})
+	const btn=document.getElementById('btn');
+	const color=document.querySelector(".color");
+	const numbers="0123456789";
+	const alphabets="abcdef";
+	function getRandomNumber(){
+		return numbers[Math.floor(Math.random()*numbers.length)]
+	}
+	function getRandomAlphabet(){
+		return alphabets[Math.floor(Math.random()*alphabets.length)]
+	}
+	function getRandom(){
+		let arr=[];
+		arr.push(get randomNumber());
+		arr.push(get RandomAlphabet());
+		return arr[math.floor(math.random()arr.length)]
+	}
+	btn.addEventListener("click",()=>{
+		let hex="#";
+		for (var i = 0; i<6; i++) {
+			hex +=getRandom()
+		}
+	document.body.style.backgroundcolor=hex;
+	color.textcontent=hex;
+	})
+</script>
+</html>
